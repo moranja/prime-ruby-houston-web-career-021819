@@ -1,12 +1,14 @@
 def prime? (potential_prime)
+  countdown = potential_prime - 1
   if potential_prime < 2 
     return FALSE
   else
-  countdown = [1..potential_prime]
-    countdown.each do
-      if potential_prime % i == 0 
+    while countdown != 1 
+      if potential_prime % countdown == 0 
         return FALSE
         break
+      else
+        countdown -= 1
       end
     end
   end
