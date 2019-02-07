@@ -10,5 +10,4 @@ def prime? (potential_prime)
       end
     end
   end
-  return TRUE
 end
