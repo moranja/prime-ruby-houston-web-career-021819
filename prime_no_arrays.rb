@@ -1,12 +1,14 @@
 def prime? (potential_prime)
+  countdown = potential_prime - 1
   if potential_prime < 2 
     return FALSE
-  elsif potential_prime > 2
-  countdown = Array(2..potential_prime-1)
-    countdown.each do |i|
-      if potential_prime % i == 0
+  else
+    while countdown != 1 
+      if potential_prime % countdown == 0 
         return FALSE
         break
+      else
+        countdown -= 1
       end
     end
   end
