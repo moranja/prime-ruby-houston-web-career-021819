@@ -9,6 +9,6 @@ def prime? (potential_prime)
         break
       end
     end
-  return TRUE
   end
+  return TRUE
 end
