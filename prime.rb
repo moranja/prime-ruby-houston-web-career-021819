@@ -3,7 +3,7 @@ def prime? (potential_prime)
     return FALSE
   else
   countdown = [1..potential_prime]
-    countdown.each do
+    countdown.each do |i|
       if potential_prime % i == 0 
         return FALSE
         break
